@@ -1,0 +1,13 @@
+
+:root {
+
+	/* Font Colors */
+	--main-font-color: #222;
+	--navbar-font-color: white;
+	/* Backgrounds */
+	--main-bg-color: #999;
+	--navbar-bg-color: #444;
+	/* animations */
+	--navbar-an-dur: .4s;
+
+}
