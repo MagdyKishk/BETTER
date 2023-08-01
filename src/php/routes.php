@@ -5,7 +5,7 @@
 		/* Routing list */
 		protected $routes = [
 			'GET' => [
-				'/'       => 'home.php',
+				'/'       => 'login.php',
 				'/home'   => 'home.php',
 				'/login'  => 'login.php',
 				'/signup' => 'signup.php',
