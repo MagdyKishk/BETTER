@@ -1,6 +1,6 @@
 <header class="nav-bar">
 
-	<div class="menu_brand">
+	<div class="left_menu">
 		<button class="burger">
 			<i class="fa-solid fa-bars"></i>
 		</button>
@@ -10,24 +10,27 @@
 		</a>
 	</div>
 
-	<form action="">
+	<form >
 		<input type="text" name="nav-bar-search">
 		<button type="submit">
 			<i class="fa fa-search"></i>
 		</button>
 	</form>
 
-	<div class="nav-menu">
+	<div class="right_menu">
 		<div class="activity">
-			<a href="#">
-				<i class="fa-regular fa-square-plus"></i>
-				<!-- <i class="fa-solid fa-square-plus"></i> -->
-			</a>
-
-			<a href="#">
-				<i class="fa-regular fa-bell"></i>
-				<!-- <i class="fa-solid fa-bell"></i> -->
-			</a>
+			<div class="navbar_add-post">
+				<a href="#">
+					<i class="fa-regular fa-square-plus"></i>
+					<!-- <i class="fa-solid fa-square-plus"></i> -->
+				</a>
+			</div>
+			<div class="navbar_notification">
+				<a href="#">
+					<i class="fa-regular fa-bell"></i>
+					<!-- <i class="fa-solid fa-bell"></i> -->
+				</a>
+			</div>
 		</div>
 
 		<a class="profile" href="#">
