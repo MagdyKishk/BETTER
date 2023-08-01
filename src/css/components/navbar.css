@@ -1,99 +1,102 @@
 @import url(../autoload.css);
 
-header.navbar {
-
-	font-family: 'Roboto', sans-serif;
+header.nav-bar {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	height: 100px;
+	justify-content: space-between;
+	position: sticky;
+	font-family: 'Roboto', sans-serif;
+	height: 60px;
+	padding: 0 20px;
 	background-color: var(--navbar-bg-color);
-
-	& .container {
-
+	border-bottom: 1px solid grey;
+	& .menu_brand {
+		display: flex;
+		gap: 10px;
+		& .burger {
+			background-color: grey;
+			border-radius: 20px;
+		}
+		& .logo {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-
-		& nav {
-
-			& ul {
-
-				display: flex;
-				justify-content: flex-end;
-				list-style: none;
-				gap: 20px;
-				width: 100%;
-				padding: 0;
-				margin: 0;
-
-				& li {
-
-					position: relative;
-					padding: 20px;
-					border: 1px solid #666;
-					background-color: #555;
-
-					&:after {
-
-						content: "";
-						width: 100%;
-						height: 1px;
-						position: absolute;
-						bottom: 0px;
-						left: 0;
-						background: linear-gradient(90deg, transparent 33%, var(--navbar-font-color) 33%, var(--navbar-font-color) 66%, transparent 66%);
-						background-size: 100%;
-						background-position: center;
-						transition: background-size var(--navbar-an-dur);
-
-					}
-
-					&:hover::after {
-
-						transform: translateX(0%);
-						background-size: 400%;
-
-					}
-
-					& a {
-
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						justify-content: center;
-						gap: 5px;
-						color: var(--navbar-font-color);
-						text-decoration: none;
-
-					}
-				}
-			}
-		}
-
-		& form {
-
+		justify-content: center;
+		background-color: #CEA203;
+		padding: 10px;
+		padding-right: 15px;
+		gap: 5px;
+		border-radius: 100vmax;
+		font-family: 'Pacifico', cursive;
+		color: var(--main-font-color);
+		text-decoration: none;
+		& span {
 			display: flex;
 			align-items: center;
-
-			& input {
-
-				padding: 10px;
-				border-radius: 10px;
-				outline: none;
-				border: 1px solid gray;
-
+			justify-content: center;
+			height: 30px;
+			width: 30px;
+			background-color: #FCDF49;
+			border-radius: 100%;
 			}
-		
-			& button {
-
-				padding: 10px;
-				cursor: pointer;
-				background-color: transparent;
-				border: none;
-				outline: none;
-				color: var(--navbar-font-color);
-
+		}
+	}
+	& form {
+		display: flex;
+		gap: 1px;
+		& input {
+			width: 100%;
+			align-items: center;
+			border: 5px solid white;
+			border-right: none;
+			outline: none;
+			border-radius: 40px 0 0 40px;
+		}
+		& button {
+			border: 5px solid white;
+			border-radius: 0 20px 20px 0;
+		}
+	}
+	& .nav-menu {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		& .activity {
+			display: flex;
+			gap: 10px;
+			& a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				width: 40px;
+				height: 40px;
+				border: 1px solid white;
+				border-radius: 20px;
+				background-color: grey;
+			}
+		}
+		& .profile {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 2px;
+			border-radius: 100%;
+			overflow: hidden;
+			transition: background-color var(--navbar-an-dur);
+			&:hover {
+				background-color: gray;
+			}
+			& .pfp {
+				width: 45px;
+				height: 45px;
+				border: 2px solid #FCDF49;
+				border-radius: 100%;
+				overflow: hidden;
+				& img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			}
 		}
 	}
